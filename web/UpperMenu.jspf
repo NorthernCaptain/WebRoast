@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="UpperMenu">
+        <h:panelGrid binding="#{UpperMenu.gridPanel1}" cellpadding="0" cellspacing="4" columns="5" id="gridPanel1" style="height: 24px; left: -1px; top: 0px; position: absolute; width: 865px">
+            <h:panelGrid binding="#{UpperMenu.gridPanel2}" id="gridPanel2" style="height: 18px" width="480"/>
+            <h:outputText binding="#{UpperMenu.userNameLbl}" id="userNameLbl" style="margin-right: 4px" value="#{SessionBean1.user.userFullName}"/>
+            <ui:imageHyperlink action="webUser" align="middle" binding="#{UpperMenu.newUserLink}" height="16" id="newUserLink"
+                imageURL="/resources/images/16/gv.png" text="Новый пользователь" width="16"/>
+            <ui:imageHyperlink action="#{UpperMenu.homeLink_action}" align="middle" binding="#{UpperMenu.homeLink}" height="16" id="homeLink"
+                imageURL="/resources/images/16/gohome.png" text="Домой" toolTip="Переход на начальную страницу" width="16"/>
+            <ui:imageHyperlink action="#{UpperMenu.logoutLink_action}" align="middle" binding="#{UpperMenu.logoutLink}" height="16" id="logoutLink"
+                imageURL="/resources/images/16/cancel.png" text="Выход" width="16"/>
+        </h:panelGrid>
+    </f:subview>
+</div>

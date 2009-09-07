@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="NavMenu">
+        <h:panelGrid binding="#{NavMenu.gridPanel1}" cellpadding="0" cellspacing="0" id="gridPanel1" style="left: 0px; top: -1px; position: absolute">
+            <ui:tree binding="#{NavMenu.screenTree}" id="screenTree"
+                style="border-width: 1px 2px 2px 2px; border-style: solid; border-color: rgb(255, 157, 41); width: 188px" text="Меню"/>
+        </h:panelGrid>
+        <h:outputText binding="#{NavMenu.nodeLbl}" id="nodeLbl" style="left: 0px; top: 432px; position: absolute; width: 240px" value="TreeNode"/>
+    </f:subview>
+</div>

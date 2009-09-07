@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<div style="-rave-layout: grid; width: 400px; height: 200px" xmlns:f="http://java.sun.com/jsf/core" xmlns:h="http://java.sun.com/jsf/html" xmlns:ui="http://www.sun.com/web/ui">
+    <f:subview id="caption">
+        <h:panelGrid binding="#{caption.gridPanel1}" cellpadding="0" cellspacing="0" id="gridPanel1"
+            style="background-image: url(resources/images/caption.jpg); height: 102px; left: -1px; top: -1px; position: absolute" width="865">
+            <h:panelGrid binding="#{caption.gridPanel2}" cellpadding="0" cellspacing="0" columns="2" id="gridPanel2" style="height: 90px; width: 100%" width="552">
+                <h:panelGrid binding="#{caption.gridPanel3}" id="gridPanel3" style="height: 60px" width="120"/>
+                <h:outputText binding="#{caption.outputText1}" id="outputText1"
+                    style="background-position: 50,50; font-size: 18px; font-weight: bold; text-decoration: underline" value="WebRoast - Информационная система по обжарке  кофе"/>
+                <h:panelGrid binding="#{caption.gridPanel4}" id="gridPanel4" style="height: 11px" width="111"/>
+                <ui:label binding="#{caption.label1}" id="label1" style="font-size: 8px" text="(c) Leo 2006, powered by Java Server Faces"/>
+            </h:panelGrid>
+        </h:panelGrid>
+    </f:subview>
+</div>
